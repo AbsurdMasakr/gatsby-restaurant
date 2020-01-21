@@ -1,11 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { PageHeader, Banner } from "../utils"
+import menuImg from "../images/bcg/menuBcg.jpeg"
 
 const MenuPage = () => (
   <Layout>
     <SEO title="Menu" />
-    <h3>hello from menu</h3>
+    <PageHeader img={menuImg}>
+      <Banner title="menu" subtitle={`let's dig in`} />
+    </PageHeader>
   </Layout>
 )
 
